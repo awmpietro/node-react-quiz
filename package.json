@@ -1,0 +1,43 @@
+{
+  "name": "react-quiz",
+  "version": "1.0.0",
+  "author": "Arthur Mastropietro",
+  "main": "src/index.js",
+  "homepage": "http://awmpietro.github.io/react-quiz",
+  "scripts": {
+    "start:server": "node ./src/server/server.js",
+    "start:client": "react-scripts start",
+    "start": "concurrently npm:start:client npm:start:server",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "reactstrap": "^8.4.1",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "concurrently": "^5.0.0",
+    "react-scripts": "^3.4.0",
+    "gh-pages": "^2.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
